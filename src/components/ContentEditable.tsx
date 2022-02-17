@@ -79,7 +79,7 @@ export class ContentEditable extends React.Component<Props> {
   onKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
 
     // On enter, focus main tag input
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13 || e.keyCode === 188) {
       e.preventDefault();
       this.focusInputRef();
       return;
